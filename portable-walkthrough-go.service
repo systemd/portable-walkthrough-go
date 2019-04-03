@@ -1,0 +1,9 @@
+[Unit]
+Description=Portable Walkthrough Go Edition Service
+Wants=portable-walkthrough-go.socket
+After=portable-walkthrough-go.socket
+
+[Service]
+ExecStart=/usr/bin/portable-walkthrough-go
+Type=exec
+StateDirectory=walkthrough-go
